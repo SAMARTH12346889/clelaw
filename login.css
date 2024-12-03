@@ -1,0 +1,112 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #b1d6fc, #8bc3fe, #6ab2ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.wrapper {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #4a4a4a;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.row i {
+    position: absolute;
+    left: 15px;
+    font-size: 20px;
+    color: #aaa;
+}
+
+.row input {
+    width: 100%;
+    padding: 15px 15px 15px 50px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.row input:focus {
+    border-color: #9bb1fa;
+    box-shadow: 0 0 8px rgba(110, 142, 251, 0.5);
+}
+
+.pass {
+    text-align: right;
+    font-size: 16px;
+}
+
+.pass a {
+    text-decoration: none;
+    color: #6e8efb;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.pass a:hover {
+    color: #90aad9;
+}
+
+.row.button input[type="submit"] {
+    background: linear-gradient(to right, #b1d6fc, #8bc3fe, #6ab2ff);
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.row.button input[type="submit"]:hover {
+    background: linear-gradient(135deg, #a777e3, #6e8efb);
+}
+
+.signup-link {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.signup-link a {
+    color: #6e8efb;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.signup-link a:hover {
+    color: #93d2ff;
+}

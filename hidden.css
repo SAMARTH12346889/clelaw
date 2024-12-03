@@ -1,0 +1,76 @@
+/* General reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #b1d6fc, #8bc3fe, #6ab2ff);
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next row if necessary */
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px; /* Adds some spacing around the body content */
+}
+
+/* Beach Card Container */
+.beach-card {
+    width: 300px; /* Ensures all cards have the same width */
+    height: 450px; /* Fixed height for consistency */
+    margin: 20px;
+    border: 2px solid #76c0fd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+}
+
+.beach-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Section */
+.card-image img {
+    width: 100%; /* Ensures the image fills the card width */
+    height: 200px; /* Fixed height to keep the image size consistent */
+    object-fit: cover; /* Ensures the image fits nicely without distortion */
+    display: block;
+}
+
+/* Content Section */
+.card-content {
+    flex-grow: 1; /* Fills the remaining space to ensure consistent layout */
+    padding: 15px;
+    text-align: center;
+}
+
+/* Beach Name */
+.beach-name {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Rating */
+.rating {
+    font-size: 1.2em;
+    color: #f7ff61; /* Yellow for rating stars */
+    margin: 5px 0;
+}
+
+/* Specialities List */
+.specialities {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    color: #555;
+}
+
+.specialities li {
+    margin: 5px 0;
+    font-size: 1em; /* Slightly smaller size for list items */
+    font-weight: 700;
+}

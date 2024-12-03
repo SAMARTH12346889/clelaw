@@ -1,0 +1,485 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Body and Overall Layout */
+body {
+    background-color: #f0f8ff;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Top Section */
+#topSection {
+ /* Reduced height */
+    background-image: url('beach1.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    color: rgb(4, 4, 4);
+    text-align: center;
+    padding: 10px 20;
+    position: relative;
+}
+
+#topSection h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Slideshow */
+/* Styles for the search section */
+
+
+/* Styles for the search input */
+#baechsearch {
+    width: 100%;
+    max-width: 400px; /* Restrict max width of the input */
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Add focus effect for input */
+#baechsearch:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Subtle glow */
+}
+
+
+/* Main Content */
+#mainContent {
+    display: flex;
+    justify-content: space-between;
+    margin: 150px 60px;
+}
+
+/* Left Section (Now Right Section: Search, AI Recommendations) */
+#rightContent {
+    width: 65%;
+}
+
+#searchSection {
+    margin-bottom: 30px;
+}
+
+#beachSearch {
+    width: 35%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+#recommendations {
+    margin-bottom: 30px;
+}
+
+#recommendations h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#recommendations button {
+    background-color: #00b4d8;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    width: 35%;
+    font-size: 1rem;
+    
+}
+
+#recommendations button:hover {
+    background-color: #0077b6;
+}
+
+   
+
+#introduction {
+    margin-top: 40px;
+}
+
+#introduction h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+#introduction p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Right Section (Now Left Section: Social Media) */
+#socialMedia {
+    width: 30%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-left: 20px;
+}
+
+#socialMedia h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+#posts {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #005f8b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #0077b6;
+    color: white;
+    margin-top: 335px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+/* Photo Upload Section */
+#photoUpload {
+    margin: 20px 0;
+}
+
+#photoUpload label {
+    font-size: 1.1rem;
+    margin-right: 10px;
+}
+
+#beachPhoto {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/* Rating Section */
+#ratingSection {
+    margin: 20px 0;
+}
+
+#ratingSection label {
+    font-size: 1.1rem;
+}
+
+#ratingStars {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#ratingStars .star {
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+#ratingStars .star:hover,
+#ratingStars .star.selected {
+    color: #ffcc00;
+}
+
+#ratingValue {
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+/* Textarea and Button */
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #005f8b;
+}
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #87CEEB, #FFE4B5);
+}
+
+#chatbot {
+
+     position: absolute; 
+    margin: 200px;
+    bottom: 200px;
+    right: 200px;
+}
+
+#chat-button {
+    background: #FFA500;
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#chat-button:hover {
+    transform: scale(1.1);
+}
+
+#chat-logo {
+    width: 80px;
+    height: 80px;
+    margin: -250px 630px;
+}
+
+#chatbox {
+    position: absolute  ;
+    bottom: -250px; 
+    right: 325px;
+    width: 300px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+#chat-header {
+    background: #FFA500;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chat-content {
+    padding: 10px;
+    height: 200px;
+    overflow-y: hidden;
+    background: #FFF5EE;
+}
+
+#chat-input {
+    display: flex;
+    padding: 10px;
+    background: #FAFAD2;
+    border-top: 1px solid #ddd;
+}
+
+#user-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#send-btn {
+    background: #FFA500;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    margin-left: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Style for Introduction in the footer */
+#introduction {
+    margin: 1px ;
+    padding: 25px;
+     /* background: #f9f9f9; Light background for distinction */
+    border-top: 1px solid #ccc;
+    text-align: center;
+    
+   
+}
+
+#introduction h2 {
+    font-size: 1.8rem;
+    margin-bottom: px;
+    
+}
+
+#introduction p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+/* General styling for social media section */
+#socialMedia {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    margin: -700  auto;
+    
+}
+
+/* Post Card Styling */
+.post-card {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-image img {
+    width: 70%;
+    height: 100px;
+    object-fit: cover;
+    max-width: 300px;
+}
+
+.post-content {
+    padding: 10px;
+    flex: 1;
+}
+
+.post-content h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.post-content p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-size: 1em;
+    color: #f7ff61; /* Blue for rating stars */
+}
+
+.stars {
+    color: gold;
+}
+
+/* Scrollable posts container */
+.scrollable {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+
+/* Styling for photo upload */
+#photoUpload {
+    margin: 20px 0;
+}
+
+#photoUpload input[type="file"] {
+    width: 50%;
+}
+
+/* Rating section */
+#ratingSection {
+    margin-bottom: 10px;
+}
+
+#ratingStars {
+    font-size: 1.5em;
+}
+
+.star {
+    cursor: pointer;
+    color: #f7ff61;
+    margin-right: 5px;
+}
+
+#ratingValue {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Textarea for new post */
+textarea#newPost {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* Button for posting */
+button#addPost {
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: #76c0fd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#addPost:hover {
+    background-color: #65a8e0;
+}
+
+#hi{
+    width: 100px;
+}

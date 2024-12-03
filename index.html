@@ -1,0 +1,151 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RHETSO Beach</title>
+        <link rel="stylesheet" href="Main.css">
+    </head>
+    <body>
+        <div>
+            <button id="hi" onclick="home()">Log Out</button>
+        </div>  <script>
+            function home(){
+                window.open('Login.html', '_blank');
+            }
+        </script>
+        <div id="topSection">
+           
+            <h1>Welcome to RHETSO TOURISM</h1>  
+              
+            <section id="serachsection">
+                <input type="text" placeholder="Serach beach " id="baechsearch">
+            </section>
+            
+        </div>
+
+        <div id="mainContent">
+            
+
+            <!-- Right Side: Search, AI Recommendations, and Introduction -->
+            <div id="rightContent">
+                <section id="recommendations">
+                    <h2>AI-Powered Beach Recommendations</h2>
+                    <script>
+                        function hiddenbeach(){
+                            window.open('hiddenbeach.html', '_blank');
+                            
+                        }
+                        function famousBeaches(){
+                            window.open('famous.html', '_blank');
+                            
+                        }
+                    </script>
+                    <button onclick="famousBeaches()" id="famousBeaches" >Famous Beaches</button>
+                    <button onclick="hiddenbeach()"id="hiddenBeaches">Hidden Beaches</button>
+                    <div id="beachSuggestions">
+                        <div id="introduction">
+            
+                            <h2>Introduction</h2>
+                            <p>Explore the best beaches in India, both famous and hidden gems. Let AI guide you to your next adventure!</p>  
+                    </div>   
+                        <!-- AI recommendations dynamically rendered -->
+                        <div id="chatbot">
+                            
+                                <img src="WhatsApp Image 2024-11-27 at 20.08.54_757821d9.jpg" alt="Beach Chat" id="chat-logo">
+                        
+                            <!-- Chatbox -->
+                            <div id="chatbox" class="hidden">
+                                <div id="chat-header">
+                                    <h3>Beach Travel Assistant</h3>
+                                    <button id="close-chat">✖</button>
+                                </div>
+                                <div id="chat-content">
+                                    <p>Welcome to our Beach Travel Chat! How can we help you today?</p>
+                                </div>
+                                <div id="chat-input">
+                                    <input type="text" id="user-input" placeholder="Type your message...">
+                                    <button id="send-btn">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                
+            </div>
+            <div id="socialMedia">
+                <h2>Rhesto Social Media</h2>
+                
+                <!-- Beach Posts Section -->
+                <div id="posts" class="scrollable">
+                    <div class="post-card">
+                        <div class="post-image">
+                            <img src="baga beach.jpeg" alt="Beach 1">
+                        </div>
+                        <div class="post-content">
+                            <h3>Beautiful Sunset Beach</h3>
+                            <p>A serene place to unwind and enjoy the beautiful sunset.</p>
+                            <div class="rating">
+                                Rating: <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-card">
+                        <div class="post-image">
+                            <img src="Alleppey Beach.jpeg" alt="Beach 2">
+                        </div>
+                        <div class="post-content">
+                            <h3>Golden Sand Beach</h3>
+                            <p>Golden sands and clear waters make this beach perfect for swimming.</p>
+                            <div class="rating">
+                                Rating: <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-card">
+                        <div class="post-image">
+                            <img src="Pondicherry Beach.jpeg" alt="Beach 3">
+                        </div>
+                        <div class="post-content">
+                            <h3>Crystal Clear Waters</h3>
+                            <p>Explore the crystal-clear waters, ideal for snorkeling and diving.</p>
+                            <div class="rating">
+                                Rating: <span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Photo Upload Section -->
+                <div id="photoUpload">
+                    <label for="beachPhoto">Upload Beach Photo:</label>
+                    <input type="file" id="beachPhoto" accept="image/*">
+                </div>
+                
+                <!-- Rating Section -->
+                <div id="ratingSection">
+                    <label for="rating">Rate this Beach:</label>
+                    <div id="ratingStars">
+                        <!-- Stars for rating -->
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <span id="ratingValue">0</span> / 5
+                </div>
+                
+                <!-- Textarea for sharing beach experience -->
+                <textarea id="newPost" placeholder="Share your beach experience..."></textarea>
+                <button id="addPost">Post</button>
+            </div>
+            
+                
+        </div>
+
+
+   
+    </body>
+    </html>
